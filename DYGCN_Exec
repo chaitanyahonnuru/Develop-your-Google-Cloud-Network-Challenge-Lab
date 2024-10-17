@@ -1,0 +1,19 @@
+export ZONE=
+
+curl -LO raw.githubusercontent.com/chaitanyahonnuru/Develop-your-Google-Cloud-Network-Challenge-Lab/refs/heads/main/DYGCN.sh
+
+sudo chmod +x DYGCN.sh
+
+./DYGCN.sh
+
+Go to Services and Ingress
+Copy endpoint's(wordpress) IP address.
+Then go to -> Uptime Checks -> + CREATE UPTIME CHECK.
+Fill in the details as provided below :
+Hostname : endpoint's IP address (without http and port number)
+
+Path : /
+
+Title: Wordpress Uptime
+
+Leave everything as default. Click Next -> Next -> Create
